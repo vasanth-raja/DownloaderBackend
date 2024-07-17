@@ -18,7 +18,7 @@ const options = {
   method: 'GET',
   url: 'https://instagram-scraper-api2.p.rapidapi.com/v1/post_info',
   params: {
-    code_or_id_or_url: match[1],
+    code_or_id_or_url: match[2],
     include_insights: 'true'
   },
       headers: {
