@@ -10,7 +10,7 @@ router.get('/',(req,res,next)=>{
 router.post('/',async (req,res,next)=>{
     console.log(req.body.url)
     const url = req.body.url;
-    const match = url.match(/\/reels?|p\/([^\/]+)/);
+    const match = url.match(/\/(reels?|p)\/([^\/]+)/);
 
    
     console.log("parts",match)
