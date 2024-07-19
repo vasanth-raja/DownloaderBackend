@@ -10,6 +10,7 @@ const downloadRoutes=require('./api/download')
 const youtubedownload=require('./api/youtubedownload')
 const facebookdownload=require('./api/facedownload')
 const instagramdownload=require('./api/instagramdownload')
+const contactus=require("./api/contact")
 
 
 
@@ -20,7 +21,7 @@ app.use('/download',downloadRoutes)
 app.use('/youtubedownload',youtubedownload)
 app.use('/facebookdownload',facebookdownload)
 app.use('/instagramdownload',instagramdownload)
-
+app.use('/contactus',contactus)
 app.use('/',(req,res,next)=>{
     console.log("unhandled route")
     res.status(200).json({
