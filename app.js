@@ -4,6 +4,7 @@ const cors=require('cors')
 
 
 const dotenv=require('dotenv')
+process.env.YTDL_NO_UPDATE = 'true'; 
 app.use(cors())
 dotenv.config();
 const downloadRoutes=require('./api/download')
